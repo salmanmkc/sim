@@ -29,10 +29,9 @@ Your workspace is indexed for hybrid retrieval. When you ask a question, Copilot
 
 Copilot supports slash commands that trigger specialized capabilities:
 
-- `/deep-research` — performs multi-step web research on a topic, synthesizing results from multiple sources
-- `/api-docs` — fetches and parses API documentation from a URL, extracting endpoints, parameters, and authentication requirements
-- `/test` — runs your current workflow with sample inputs and reports results inline
-- `/build` — generates a complete workflow from a natural language description, wiring up blocks and configuring integrations
+- `/actions` — lets Copilot act on your behalf using your connected integrations, like summarizing your recent emails, researching data on a topic and writing the results to a Google Sheet, or checking Slack for unread messages
+- `/research` — spawns a subagent for multi-step web research, synthesizing results from multiple sources
+- `/search`, `/read`, `/scrape`, `/crawl` — web interaction commands for searching, reading pages, scraping content, and crawling sites
 
 Use `@` commands to pull specific context into your conversation. `@block` references a specific block's configuration and recent outputs. `@workflow` includes the full workflow structure. `@logs` pulls in recent execution traces. This lets you ask targeted questions like "why is `@Slack1` returning an error?" and Copilot has the exact context it needs to diagnose the issue.
 
